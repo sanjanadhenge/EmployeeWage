@@ -11,7 +11,7 @@ namespace Employee
         static void Main(string[] args)
         {
             Employeewage employeewage = new Employeewage();
-            employeewage.Attendance();
+            employeewage.Dailyempwage();
         }
     }
 }
