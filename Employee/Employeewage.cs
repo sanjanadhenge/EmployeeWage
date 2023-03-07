@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Employee
 {
-    public class Employeewage
+    public class EmployeeWage
     {
         const int Is_present = 1;
         public void Attendance()
