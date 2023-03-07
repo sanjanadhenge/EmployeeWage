@@ -10,8 +10,13 @@ namespace Employee
     {
         static void Main(string[] args)
         {
-            Employeewage employeewage = new Employeewage();
+<<<<<<< HEAD
+            EmployeeWage employeewage = new EmployeeWage();
             employeewage.Dailyempwage();
+=======
+            EmployeeWage employeewage = new EmployeeWage();
+            employeewage.Attendance();
+>>>>>>> UC1-Example
         }
     }
 }
