@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Employee
 {
-    public class Employeewage
+    public class EmployeeWage
     {
         const int Is_present = 1, Wage_Per_Hr =20, Full_Day_Hr=8;
         public void Attendance()
@@ -22,7 +22,7 @@ namespace Employee
                 Console.WriteLine("Employee is Absent");
             }
         }
-        public void Dailyempwage()
+        public void DailyempWage()
         {
             int wage = Wage_Per_Hr * Full_Day_Hr;
             Console.WriteLine(wage);
