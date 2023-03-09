@@ -10,8 +10,8 @@ namespace Employee
     {
         static void Main(string[] args)
         {
-            Employeewage employeewage = new Employeewage();
-            employeewage.Dailyempwage();
+            EmployeeWage employeewage = new EmployeeWage();
+            employeewage.DailyempWage();
         }
     }
 }
