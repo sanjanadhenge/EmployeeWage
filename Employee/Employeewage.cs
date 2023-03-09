@@ -43,10 +43,8 @@ namespace Employee
 
                 }
             }
-            
-
-            int wage = Wage_Per_Hr * empHrs;
-            Console.WriteLine("Daily Wage " + wage);
+                int wage = Wage_Per_Hr * empHrs;
+                 Console.WriteLine("Daily Wage " + wage);
         }
         
     }
