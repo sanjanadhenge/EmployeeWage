@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Employee
 {
-    public class Employeewage
+    public class EmployeeWage
     {
         const int Is_present = 1, Wage_Per_Hr = 20, Full_Day_Hr = 8, Part_Time_Hr = 4, Is_Full_Time = 0, Is_Part_Time = 0;
         public void Attendance()
@@ -22,7 +22,7 @@ namespace Employee
                 Console.WriteLine("Employee is Absent");
             }
         }
-        public void Dailyempwage()
+        public void DailyempWage()
         {
             int empHrs = 0;
             Random random = new Random();
