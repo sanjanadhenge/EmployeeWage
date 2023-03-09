@@ -22,7 +22,7 @@ namespace Employee
                 Console.WriteLine("Employee is Absent");
             }
         }
-        public void Dailyempwage()
+        public void DailyempWage()
         {
             int empHrs = 0;
             Random random = new Random();
@@ -43,10 +43,8 @@ namespace Employee
 
                 }
             }
-            
-
-            int wage = Wage_Per_Hr * empHrs;
-            Console.WriteLine("Daily Wage " + wage);
+                int wage = Wage_Per_Hr * empHrs;
+                 Console.WriteLine("Daily Wage " + wage);
         }
         
     }
