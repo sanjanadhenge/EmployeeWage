@@ -8,7 +8,7 @@ namespace Employee
 {
     public class EmployeeWage
     {
-        const int Is_present = 1, Total_working_days = 20,Wage_Per_Hr = 20, Full_Day_Hr = 8, Part_Time_Hr = 4, Is_Full_Time = 0, Is_Part_Time = 1,Total_Working_Hrs = 100;
+        const int Is_present = 1, Full_Day_Hr = 8, Part_Time_Hr = 4, Is_Full_Time = 0, Is_Part_Time = 1;
         public void Attendance()
         {
             Random random = new Random();
@@ -22,7 +22,7 @@ namespace Employee
                 Console.WriteLine("Employee is Absent");
             }
         }
-        public void DailyempWage()
+        public void DailyempWage(String CompanyName,int Wage_Per_Hr, int Total_working_days,int Total_Working_Hrs)
         {
             int empHrs = 0;
             Random random = new Random();
@@ -44,7 +44,7 @@ namespace Employee
                 }
             }
                 int wage = Wage_Per_Hr * empHrs;
-                 Console.WriteLine("Daily Wage " + wage);
+                 Console.WriteLine(CompanyName+"---->"+"Daily Wage =" + wage);
         }
         
     }
