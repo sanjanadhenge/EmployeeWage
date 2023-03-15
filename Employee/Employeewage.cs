@@ -9,6 +9,9 @@ namespace Employee
     public class EmployeeWage
     {
         const int Is_present = 1, Full_Day_Hr = 8, Part_Time_Hr = 4, Is_Full_Time = 0, Is_Part_Time = 1;
+        int[] TotalWage = new int[10];
+        String[] Name = new String[10];
+        int i = 0,k=0;
         public void Attendance()
         {
             Random random = new Random();
@@ -25,6 +28,8 @@ namespace Employee
         public void DailyempWage(String CompanyName,int Wage_Per_Hr, int Total_working_days,int Total_Working_Hrs)
         {
             int empHrs = 0;
+            Name[k] = CompanyName;
+            k++;
             Random random = new Random();
             int check = random.Next(0, 3);
             for (int i = 0; i < Total_working_days && empHrs< Total_Working_Hrs; i++) 
@@ -43,8 +48,17 @@ namespace Employee
 
                 }
             }
-                int wage = Wage_Per_Hr * empHrs;
-                 Console.WriteLine(CompanyName+"---->"+"Daily Wage =" + wage);
+           int wage = Wage_Per_Hr * empHrs;
+           TotalWage[i] = wage;
+            i++;
+           
+        }
+         public void SavedWages()
+        {
+            for(int j=0;j<4;j++)
+            {
+                Console.WriteLine(Name[j] + "---->" + "Total Wage =" + TotalWage[j]);
+            }
         }
         
     }
