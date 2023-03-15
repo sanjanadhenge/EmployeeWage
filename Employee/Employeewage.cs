@@ -45,21 +45,20 @@ namespace Employee
                     default:
                         empHrs += 0;
                         break;
-
                 }
             }
            int wage = Wage_Per_Hr * empHrs;
            TotalWage[i] = wage;
             i++;
-           
         }
-         public void SavedWages()
-        {
+         
+        public void SavedWages()
+         {
             for(int j=0;j<4;j++)
             {
                 Console.WriteLine(Name[j] + "---->" + "Total Wage =" + TotalWage[j]);
             }
-        }
+         }
         
     }
 }
